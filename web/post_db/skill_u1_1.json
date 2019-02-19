@@ -1,0 +1,23 @@
+{
+  "sid":0,
+  "title": "meditation",
+  "desc" : "sit and meditate for 5 min",
+  "materials" : {
+    "logo" : "meditate",
+    "text" : []
+  },
+  "tags" : [],
+  "freq" : "freq_1d",
+  "count": 20,
+  "ref"  : {
+    "_uid" : "000000000000000000000000",
+    "_sid" : "000000000000000000000000",
+    "_ouid": "000000000000000000000000",
+    "_osid": "000000000000000000000000"
+  },
+  "date" : {
+    "created" : "Thu, 01 Nov 2018 00:00:00 GMT",
+    "updated" : "Thu, 01 Nov 2018 00:00:00 GMT"
+  },
+  "code":"u1_sk1"
+}

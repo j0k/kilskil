@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.min.js"></script>
+  <script type="text/javascript" src="https://momentjs.com/downloads/moment.js"></script>
+  <link rel="stylesheet" href="http://cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.css" />
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+<!-- https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script type="text/javascript">
+    function toggleSkill(node, skill_id) {
+      var skill = document.getElementById(skill_id);
+
+      var par   = node.parentElement.parentElement.parentElement;
+      var child = node.firstElementChild;
+      var if_none = (child.className == "glyphicon glyphicon-arrow-down");
+
+      child.className = (if_none) ? "glyphicon glyphicon-arrow-up" : "glyphicon glyphicon-arrow-down";
+
+      elems = par.getElementsByClassName("skill-lurk");
+
+      for(var i = 0; i< elems.length;i++){
+        elem = elems[i];
+        elem.style.display = (if_none) ? "block" : "none";
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div id="main" class="main">
+    <div class="center avatar">
+      <div class="w3-padding">
+        <img src="imgs/ava2.png" height="250" width="250" />
+      </div>
+      <p><span class="soft"></span><label style="font-weight:600; font-size:34;" for=""><h2>{{ data["username"] }}</h2></label></p>
+    </div>
+
+    <div class="just-center">
+      <button id="example-g-PreviousDomain-selector" style="margin-bottom: 10px;" class="btn"><i class="icon icon-chevron-left"></i></button>
+      <button id="example-g-NextDomain-selector" style="margin-bottom: 10px;" class="btn"><i class="icon icon-chevron-right"></i></button>
+    </div>
+
+    <!-- style="padding-left:0% -->
+    <div class="">
+      <div id="cal-heatmap"></div>
+    </div>
+
+    <div class="just-center">
+      <span class="skill-label">Skills:</span>
+
+      {% for skill in data["skills"] %}
+
+      <div class="main_hep">
+        <div class="main__item" style="">
+          <img src="imgs/{{ skill["logo"] }}.png" height="42" width="42" />
+        </div>
+        <div class="main__item" style="width:100%">
+          <dl class="skill w3-container w3-padding" id="skill_1">
+            <dt>
+              <div class="">
+                {{ skill["title"] }}
+              </div>
+
+              <div class="w3-padding">
+                <button id="btn" class="w3-btn" onclick="toggleSkill(this, 'skill_1')">
+                  <i class="glyphicon glyphicon-arrow-down"></i>
+                </button>
+                <button id="btna" class="w3-btn" onclick="function a(){}">
+                  <i class="glyphicon glyphicon-share"></i>
+                </button>
+                <button type="button" class="w3-btn" name="button">
+                  <img class="" src="imgs/code-fork.png" width="18" height="18">
+                </button>
+              </div>
+            </dt>
+            <dt>
+              <div class="w3-padding w3-round skill-lurk">
+                  {{ skill["desc"] }}
+                  <div style="text-align:left; overflow-wrap: break-word;">
+
+
+                    <ol class="">
+                      {% for txt in skill["materials"]["text"] %}
+                      <li>
+                        {% if txt[:4] == "http" or  txt[:3] == "ftp" %}
+                          <a href="{{ txt }}" target="_blank">
+                            <p style="text-align:left; overflow-wrap: break-all; word-break: break-all;">{{ txt }}</p>
+                          </a>
+                        {% else %}
+                          <p style="text-align:left; overflow-wrap: break-all; word-break: break-all;">{{ txt }}</p>
+                        {% endif %}
+                      </li>
+                      {% endfor %}
+                    </ol>
+                  </div>
+              </div>
+            </dt>
+            <dt>
+              <!-- https://www.w3schools.com/w3css/w3css_progressbar.asp -->
+              <div class="w3-light-blue w3-round">
+                <div class="w3-container w3-round w3-blue w3-center" style="width:{{ skill["perc"] }}%">{{ skill["progress"]["num"] }}/{{ skill["count"] }}</div>
+              </div>
+            </dt>
+          </dl>
+        </div>
+      </div>
+      {% endfor %}
+
+
+
+    </div>
+
+    <script type="text/javascript" src="js/cal.js"></script>
+  </div>
+</body>

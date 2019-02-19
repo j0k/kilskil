@@ -1,0 +1,23 @@
+{
+  "sid":1,
+  "title": "song heroin velvet",
+  "desc" : "take the guitar and play it",
+  "materials" : {
+    "logo" : "music",
+    "text" : ["https://amdm.ru/akkordi/velvet_underground/86574/heroin/", "attention to the tabs and keep beat", "https://www.youtube.com/watch?v=qFLw26BjDZs"]
+  },
+  "tags" : [],
+  "freq" : "freq_1d",
+  "count": 20,
+  "ref"  : {
+    "_uid" : "000000000000000000000000",
+    "_sid" : "000000000000000000000000",
+    "_ouid": "000000000000000000000000",
+    "_osid": "000000000000000000000000"
+  },
+  "date" : {
+    "created" : "Thu, 01 Nov 2018 00:00:00 GMT",
+    "updated" : "Thu, 01 Nov 2018 00:00:00 GMT"
+  },
+  "code":"u1_sk2"
+}

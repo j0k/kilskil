@@ -1,0 +1,21 @@
+{
+  "username": "one",
+  "uid": 1,
+  "chat_id": 1,
+  "ref": {
+    "_uid": "5745ef6494aef075d127f1d0",
+    "_sid": "000000000000000000000000"
+  },
+  "date": {
+    "updated": "Fri, 03 Oct 2014 08:16:52 GMT",
+    "created": "Fri, 03 Oct 2014 08:16:52 GMT"
+  },
+  "about": {
+    "moto": "hep",
+    "bio" : ""
+  },
+  "links": {
+    "telegram_id": 0
+  },
+  "code": "u1"
+}
