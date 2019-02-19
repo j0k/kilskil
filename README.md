@@ -1,6 +1,10 @@
 # kilskil
 Kilskil allows you to develop all skills you want with fine notifications and keeping mind happy.
 
+# philosophy in short
+
+skill as a link 
+
 # why it's important
 Each of as has lot of original mind practices and exercises he/she develop or want to develop. Here you can share it, descibe it and allow other people to connect you practices in constructive way. If you like deep mind processes you will definitly like it.
 
@@ -34,3 +38,18 @@ Skills:
 
 [skills]:  screens/skills.png "List of skills"
 [profile]: screens/profile.png "Profile with avatar"
+
+# contacts
+pm me with ideas, improvements and evolution. glad to any discussion on how mind works and how to reflect it stable velocity change with kilskil approach. in any case.
+
+
+0. https://t.me/kilskil - official common chat for kilskil discussion 
+1. fb.com/yuri.konoplev
+2. @bimodaling in telegram
+3. @keytheorem in insta
+4. https://www.linkedin.com/in/yuri-konoplev/
+5. @vudijudi in snapchat
+6. vk.com/bimodal
+7. https://medium.com/@j00000k
+8. darling.kicks [hep] gm41l.com
+
