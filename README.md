@@ -1,9 +1,13 @@
 # kilskil
-Kilskil allows you to develop all skills you want with fine notifications and keeping mind happy.
+Kilskil - is a tool that allows you to develop all skills you want with fine notifications and keeping mind happy.
 
 # philosophy in short
 
-skill as a link 
+skill as a link
+
+# about education
+
+Today our education usually very specific on type of brain process and brain-style activity. For example we spend 4 years on one specializaion in University. Our skill based appoarch is to give freedom in mind usage. Imagine that in school you will work with languages, art, dances, mediation and mind practicies, programming, plants, imagination, body work, work with warm and cold, engineering, singing in individual, in pair and in group. The idea is to learn the techniques of mind usage or how-to-change mind process, you learn style of brain activations and learn howto keep choosed activity as major activity for long time.
 
 # why it's important
 Each of as has lot of original mind practices and exercises he/she develop or want to develop. Here you can share it, descibe it and allow other people to connect you practices in constructive way. If you like deep mind processes you will definitly like it.
