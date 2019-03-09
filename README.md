@@ -12,7 +12,7 @@ Today our education usually very specific on type of brain process and brain-sty
 # why it's important
 Each of as has lot of original mind practices and exercises he/she develop or want to develop. Here you can share it, descibe it and allow other people to connect you practices in constructive way. If you like deep mind processes you will definitly like it.
 
-Each skill have at least four parameters: title, description, frequency and the number (how many times you are going to repeat this experience). 
+Each skill have at least four parameters: title, description, frequency and the number (how many times you are going to repeat this experience).
 
 # how it works
 
@@ -29,13 +29,51 @@ and remember that perception is also a mind skill
 # todo
 - add skill of meditation on time-stop experiment
 
+# launch flow
+
+1. launch REST
+```
+cd web
+uwsgi --ini kilskil.ini
+```
+2. launch WEB
+```
+cd pure_web
+python3 app.py
+```
+
+3. drop DB
+drop DB
+```
+cd web
+mongo localhost/kiskil2 mongo/drop_all.js
+```
+
+4. fill DB
+fill DB
+```
+cd /web/post_db
+./fill.sh
+```
+
+5. link db:
+```
+cd web
+mongo localhost/kiskil2 mongo/link_all.js
+```
+
+6. check mongo db:
+```
+mongo localhost/kilskil2
+```
+
 # screenshort
 
-Profile: 
+Profile:
 
 ![alt text][profile]
 
-Skills: 
+Skills:
 
 ![alt text][skills]
 
@@ -47,7 +85,7 @@ Skills:
 pm me with ideas, improvements and evolution. glad to any discussion on how mind works and how to reflect it stable velocity change with kilskil approach. in any case.
 
 
-0. https://t.me/kilskil - official common chat for kilskil discussion 
+0. https://t.me/kilskil - official common chat for kilskil discussion
 1. fb.com/yuri.konoplev
 2. @bimodaling in telegram
 3. @keytheorem in insta
@@ -56,4 +94,3 @@ pm me with ideas, improvements and evolution. glad to any discussion on how mind
 6. vk.com/bimodal
 7. https://medium.com/@j00000k
 8. darling.kicks [hep] gm41l.com
-
